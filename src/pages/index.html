@@ -145,9 +145,22 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <main class="interactions">
+        <section class="input">
+          <p>
+            <label for="drug-name-first">Drug name:
+                <input class="drug__name-first" name="drug-name" id="drug-name-first" type="text">
+            </label>
+            <label for="drug-name-second">Drug name:
+              <input class="drug__name-second" name="drug-name" id="drug-name-second" type="text">
+          </label>
+        </p>
+        <button class="button" name="send">Check interactions!</button>
+        </section>
+        <section class="result">
+          <p class="disclaimer"></p>
+          <p class="comment"></p>
+        </section>
+    </main>
   </body>
 </html>
