@@ -10,4 +10,28 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  font-family: Helvetica, sans-serif;
+}
+
+.interactions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input, .result {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.result {
+  text-align: left;
+}
+
+.drug__name-first, .drug__name-second {
+  display: block;
+  margin-bottom: 16px;
 }

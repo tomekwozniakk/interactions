@@ -9,8 +9,8 @@ import '../scss/main.scss';
 console.log('HELLO 🚀');
 
 const button = document.querySelector('.button');
-const inputOne = document.querySelector('.drug__name-first');
-const inputTwo = document.querySelector('.drug__name-second');
+const inputOne = document.querySelector('.drug__name-first--js');
+const inputTwo = document.querySelector('.drug__name-second--js');
 const disclaimer = document.querySelector('.disclaimer');
 const comment = document.querySelector('.comment');
 
