@@ -18,10 +18,13 @@ const comment = document.querySelector('.comment');
 button.addEventListener('click', (e) =>{
     const dataOne = inputOne.value;
     const dataTwo = inputTwo.value;
+    comment.innerHTML = '';
+    disclaimer.innerHTML = '';
     fetch(`https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=${dataOne}&maxEntries=1&option=1`)
     .then(resp => resp.json())
     .then(resp => {
         let resultOne = resp.approximateGroup.candidate[0].rxcui;
+        
     fetch(`https://rxnav.nlm.nih.gov/REST/approximateTerm.json?term=${dataTwo}&maxEntries=1&option=1`)
     .then(resp => resp.json())
     .then(resp => {
@@ -38,7 +41,7 @@ button.addEventListener('click', (e) =>{
         console.log(commentText);
         }
         else {
-            comment.innerHTML = `There was no interacions to display.` 
+            comment.innerHTML = `There was no interactions to display.` 
         }
 })})})
     
